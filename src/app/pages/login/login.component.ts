@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthenticationRequest } from '../../services/models';
 
 @Component({
   selector: 'app-login',
@@ -9,7 +10,7 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
-  authRequest: AuthRequest = { email : '', password: '' };
+  authRequest: AuthenticationRequest = { email : '', password: '' };
   errorMsg: Array<string> = []; 
 
 }
