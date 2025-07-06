@@ -1,1 +1,9 @@
-<p>login works!</p>
+<div class="container-fluid card login-container">
+
+    <h3 class="text-center">Login</h3>
+    <hr>
+    <div class="alert alert-danger" roler="alert" *ngIf="errorMsg.length">
+        <p *ngFor="let message of errorMsg">{{message}}</p>
+    </div>
+
+</div>
